@@ -5,20 +5,28 @@
   <meta charset="utf-8">
   <title>The HTML5 Herald</title>
   <style type="text/css">
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
   .card {
-    height: 100vh;
-    border: 10px solid #30b171;
-    border-radius:15px;
-    font-family: serif;
-    font-size: 180px;
+    height: 100%;
     background-color: #89f7c8;
-    color:#30b171;
     text-align: center;
+    display: table;
+    width: 100%;
+  }
+  .card span {
+    font-family: sans-serif;
+    font-size: 35em;
+    color:#30b171;
+    display: table-cell;
     vertical-align: middle;
   }
   </style>
 </head>
 <body>
-  <div class="card">½</div>
+  <div class="card"><span>½</span></div>
 </body>
 </html>
